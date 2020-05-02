@@ -23,10 +23,19 @@ public class Main extends Application
     public void start(Stage primaryStage)
     {
         window = primaryStage;
+        window.setOnCloseRequest(e -> {
+            e.consume();
+            closeProgram();
+        }); // What happens when you press the x button
+
         Label label1 = new Label("Login page!");
 
         Button button1= new Button("Login");
-        button1.setOnAction(e -> Alert.display("Meniu", "Test"));
+        button1.setOnAction(e -> {
+            boolean result = ConfirmBox.display("Confirm","Are you sure?");
+            System.out.println(result);
+        });
+
     /*
         VBox layout1 = new VBox(20);
         layout1.getChildren().addAll(label1,button1);
@@ -49,6 +58,14 @@ public class Main extends Application
         window.setScene(scene);
         window.show();
 
+    }
+    private void closeProgram()
+    {
+        Boolean answer = ConfirmBox.display("Confirm","Are you sure you want to exit?");
+        if(answer)
+        {
+            window.close();
+        }
     }
 
 }
