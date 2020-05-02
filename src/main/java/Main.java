@@ -1,8 +1,7 @@
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -36,6 +35,25 @@ public class Main extends Application
             System.out.println(result);
         });
 
+        HBox topMenu = new HBox();
+        Button buttonA = new Button("File");
+        Button buttonB = new Button("Edit");
+        Button buttonC = new Button("View");
+        topMenu.getChildren().addAll(buttonA, buttonB, buttonC);
+
+        VBox leftMenu = new VBox();
+        Button buttonD = new Button("D");
+        Button buttonE = new Button("E");
+        Button buttonF = new Button("F");
+        leftMenu.getChildren().addAll(buttonD,buttonE,buttonF);
+
+        BorderPane borderPane = new BorderPane();
+        borderPane.setTop(topMenu);
+        borderPane.setLeft(leftMenu);
+
+        Scene scene = new Scene(borderPane,300,250);
+
+
     /*
         VBox layout1 = new VBox(20);
         layout1.getChildren().addAll(label1,button1);
@@ -52,9 +70,9 @@ public class Main extends Application
         window.setTitle("Login test");
         window.show();
         */
-        StackPane layout = new StackPane();
+        Pane layout = new StackPane();
         layout.getChildren().add(button1);
-        Scene scene = new Scene(layout,300,300);
+        //Scene scene = new Scene(layout,300,300);
         window.setScene(scene);
         window.show();
 
