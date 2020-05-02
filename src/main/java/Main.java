@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 
-public class Menu extends Application
+public class Main extends Application
 {
 
     Stage window;
@@ -26,8 +26,8 @@ public class Menu extends Application
         Label label1 = new Label("Login page!");
 
         Button button1= new Button("Login");
-        button1.setOnAction(e -> window.setScene(scene2));
-
+        button1.setOnAction(e -> Alert.display("Meniu", "Test"));
+    /*
         VBox layout1 = new VBox(20);
         layout1.getChildren().addAll(label1,button1);
         scene1 = new Scene(layout1, 200, 200);
@@ -42,6 +42,13 @@ public class Menu extends Application
         window.setScene(scene1);
         window.setTitle("Login test");
         window.show();
+        */
+        StackPane layout = new StackPane();
+        layout.getChildren().add(button1);
+        Scene scene = new Scene(layout,300,300);
+        window.setScene(scene);
+        window.show();
+
     }
 
 }
