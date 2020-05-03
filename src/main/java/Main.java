@@ -1,3 +1,4 @@
+import JSON.JsonUser;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
@@ -9,7 +10,7 @@ import javafx.event.ActionEvent;
 
 public class Main extends Application
 {
-
+    Scene scene;
     Stage window;
     Scene scene1,scene2;
     Button loginButton;
@@ -27,31 +28,7 @@ public class Main extends Application
             closeProgram();
         }); // What happens when you press the x button
 
-        Label label1 = new Label("Login page!");
 
-        Button button1= new Button("Login");
-        button1.setOnAction(e -> {
-            boolean result = ConfirmBox.display("Confirm","Are you sure?");
-            System.out.println(result);
-        });
-
-        HBox topMenu = new HBox();
-        Button buttonA = new Button("File");
-        Button buttonB = new Button("Edit");
-        Button buttonC = new Button("View");
-        topMenu.getChildren().addAll(buttonA, buttonB, buttonC);
-
-        VBox leftMenu = new VBox();
-        Button buttonD = new Button("D");
-        Button buttonE = new Button("E");
-        Button buttonF = new Button("F");
-        leftMenu.getChildren().addAll(buttonD,buttonE,buttonF);
-
-        BorderPane borderPane = new BorderPane();
-        borderPane.setTop(topMenu);
-        borderPane.setLeft(leftMenu);
-
-        Scene scene = new Scene(borderPane,300,250);
 
 
     /*
@@ -70,11 +47,17 @@ public class Main extends Application
         window.setTitle("Login test");
         window.show();
         */
-        Pane layout = new StackPane();
-        layout.getChildren().add(button1);
+        //Pane layout = new StackPane();
+        //layout.getChildren().add(button1);
         //Scene scene = new Scene(layout,300,300);
-        window.setScene(scene);
-        window.show();
+
+
+
+        //scene = new SignUp().getScene();
+        //window.setScene(scene);
+        //window.show();
+        JsonUser userFile = new JsonUser("user.json");
+        userFile.readJson();
 
     }
     private void closeProgram()
