@@ -1,15 +1,16 @@
 //STEP 1. Import required packages
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DBtest {
     // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost/";
-
     //  Database credentials
     static final String USER = "username";
     static final String PASS = "password";
-
     public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;

@@ -1,87 +1,36 @@
 package JSON;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
-import org.json.*;
-import org.json.simple.parser.*;
-
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
-public abstract class JsonController
+public class JsonController
 {
-    private JSONObject jsonData;
-    private String fileName;
-    public JsonController(String fileName)
+    public static List<JsonUser> readArrayUser(String filePath)
     {
-        this.jsonData = new JSONObject();
-        this.fileName = fileName;
-    }
-
-    public void writeJson()
-    {
-        try (FileWriter file = new FileWriter(this.fileName)) {
-
-            file.write(jsonData.toString(4));
-            file.flush();
-
-        } catch (IOException err) {
-            err.printStackTrace();
-        }
-    }
-    public void writeJson(String fileName)
-    {
-        try (FileWriter file = new FileWriter(fileName)) {
-
-            file.write(jsonData.toString(4));
-            file.flush();
-
-        } catch (IOException err) {
-            err.printStackTrace();
-        }
-    }
-
-    public void readJson()
-    {
-        JSONParser jsonParser = new JSONParser();
-
-        try (FileReader reader = new FileReader(this.fileName))
+        ObjectMapper objectMapper = new ObjectMapper();
+        File file = new File(filePath);
+        List<JsonUser> jsonList = null;
+        try
         {
-            //Read JSON file
-            Object obj = jsonParser.parse(reader);
-            jsonData = (JSONObject) obj;
-            System.out.println(jsonData);
-            //JSONArray dataList = (JSONArray) obj;
-            //System.out.println(dataList);
-            //Iterate over employee array
-            //dataList.forEach( el -> parseFunction( (JSONObject) el ) );
-
-        } catch (Exception err) {
-            err.printStackTrace();
-        }
-
-    }
-    public void readJson(String fileName)
-    {
-        JSONParser jsonParser = new JSONParser();
-
-        try (FileReader reader = new FileReader(fileName))
+            jsonList = objectMapper.readValue(file, new TypeReference<List<JsonUser>>(){});
+        } catch (IOException e)
         {
-            //Read JSON file
-            Object obj = jsonParser.parse(reader);
-
-            JSONArray dataList = (JSONArray) obj;
-            //Iterate over employee array
-            dataList.forEach( el -> parseFunction( (JSONObject) el ) );
-
-        } catch (Exception err) {
-            err.printStackTrace();
+            e.printStackTrace();
+        }
+        return jsonList;
+    }
+    public static void writeArrayUser(String filePath, List<JsonUser> lst)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try
+        {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath), lst);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
         }
     }
-
-
-
-    public abstract void parseFunction(JSONObject obj);
-
 }
