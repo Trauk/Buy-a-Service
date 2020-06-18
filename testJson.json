@@ -50,4 +50,16 @@
   "username" : "Dummy",
   "password" : "81dc9bdb52d04dc20036dbd8313ed055",
   "type" : "Client"
+}, {
+  "username" : "Test",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Tamplar",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "AvocatulDa",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
 } ]

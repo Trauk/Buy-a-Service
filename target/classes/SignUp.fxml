@@ -41,7 +41,7 @@
                         </Label>
                     </children>
                 </VBox>
-                <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#signUpButton" prefHeight="332.0" prefWidth="550.0" styleClass="containerOut" stylesheets="@style.css" GridPane.rowIndex="2">
+                <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#spButtonAction" prefHeight="332.0" prefWidth="550.0" styleClass="containerOut" stylesheets="@style.css" GridPane.rowIndex="2">
                     <children>
                         <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
                             <image>

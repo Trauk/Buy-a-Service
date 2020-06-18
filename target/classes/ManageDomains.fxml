@@ -15,16 +15,22 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="800.0" prefWidth="202.0">
                      <children>
-                        <Button mnemonicParsing="false" onMouseClicked="#addDomainButtonAction" text="Add" />
-                        <Button mnemonicParsing="false" onMouseClicked="#deleteDomainButtonAction" text="Delete" />
-                        <Button mnemonicParsing="false" onMouseClicked="#backButtonAction" text="Back" />
+                        <Button minWidth="116.0" mnemonicParsing="false" onMouseClicked="#addDomainButtonAction" styleClass="buttonAdmin" stylesheets="@style.css" text="Add">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#deleteDomainButtonAction" styleClass="buttonAdmin" text="Delete">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></Button>
+                        <Button minWidth="116.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back" />
                      </children>
                   </VBox>
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <ListView fx:id="domainView" minWidth="500.0" prefHeight="757.0" prefWidth="500.0">
+                  <ListView fx:id="domainView" minWidth="500.0" prefHeight="757.0" prefWidth="500.0" styleClass="list-cell">
                      <HBox.margin>
                         <Insets bottom="50.0" top="50.0" />
                      </HBox.margin>

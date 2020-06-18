@@ -64,6 +64,35 @@ public class JsonController
         }
     }
 
+    public static JsonSP readSP(String filePath)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        File file = new File(filePath);
+        JsonSP jsonObj = null;
+        try
+        {
+            jsonObj = objectMapper.readValue(file, JsonSP.class);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return jsonObj;
+    }
+
+    public static void writeSP(String filePath, JsonSP jc)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try
+        {
+            File file = new File(filePath);
+            file.getParentFile().mkdirs();
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, jc);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     public static List<JsonDomain> readArrayDomain(String filePath)
     {
         ObjectMapper objectMapper = new ObjectMapper();

@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import misc.Domain;
 import users.User;
 
 import java.io.IOException;
@@ -19,6 +20,7 @@ public class LogSignMenu
 
     public static void InitScene() throws IOException
     {
+        Domain.updateList();
         stage.setTitle("Start menu");
         /*stage.setMinWidth(250);
         Button logInButton = new Button("Log In");

@@ -1,8 +1,6 @@
 package scenes;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import Handler.SceneHandler;
 
 import java.io.IOException;
 
@@ -31,9 +29,10 @@ public class SignUp extends LogSignMenu
         hLayout.setAlignment(Pos.CENTER);
         layout.getChildren().addAll(label,hLayout,backButton);
         layout.setAlignment(Pos.CENTER);*/
-        Parent root = FXMLLoader.load(SignUp.class.getResource("/SignUp.fxml"));
+       /* Parent root = FXMLLoader.load(SignUp.class.getResource("/SignUp.fxml"));
         scene = new Scene(root);
-        stage.setScene(scene);
+        stage.setScene(scene);*/
+        SceneHandler.InitScene("SignUp","Sign up");
     }
     public void backButton()
     {
@@ -50,6 +49,12 @@ public class SignUp extends LogSignMenu
     {
         SignUpClient.InitScene();
     }
+
+    public void spButtonAction() throws IOException
+    {
+        SPSign.InitScene();
+    }
+
     //public Scene getScene()
     /*{
         return scene;
