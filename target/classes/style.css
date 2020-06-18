@@ -9,6 +9,12 @@
    -fx-background-color: #f59842;
 }
 
+.backgroundAdmin
+{
+    -fx-background-color: #f59842;
+}
+
+
 .container:hover
 {
     -fx-background-color: #a6682e;

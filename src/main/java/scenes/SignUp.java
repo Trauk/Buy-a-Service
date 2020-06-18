@@ -46,7 +46,7 @@ public class SignUp extends LogSignMenu
         }
     }
 
-    public void clientButton()
+    public void clientButton() throws IOException
     {
         SignUpClient.InitScene();
     }

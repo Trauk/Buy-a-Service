@@ -1,5 +1,6 @@
 package scenes;
 
+import Handler.LogInHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -85,12 +86,17 @@ public class LogIn extends LogSignMenu
     }
 
     @FXML
-    public void logButtonAction()
+    public void logButtonAction() throws IOException
     {
-        boolean res = users.comparePassword(userInput.getText(), passField.getText());
+        String username = userInput.getText();
+        boolean res = users.comparePassword(username, passField.getText());
         if(res == true)
         {
             Alert.display("Success", "Login successful!");
+            //AdminMenu.InitScene();
+            //System.out.println(users.getType(userInput.getText()));
+            LogInHandler.logIn(userInput.getText(),users.getType(username));
+
         }
         else
         {

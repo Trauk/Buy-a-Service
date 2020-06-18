@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ManageDomains">
+   <children>
+      <HBox prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="800.0" prefWidth="202.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#addDomainButtonAction" text="Add" />
+                        <Button mnemonicParsing="false" onMouseClicked="#deleteDomainButtonAction" text="Delete" />
+                        <Button mnemonicParsing="false" onMouseClicked="#backButtonAction" text="Back" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="domainView" minWidth="500.0" prefHeight="757.0" prefWidth="500.0">
+                     <HBox.margin>
+                        <Insets bottom="50.0" top="50.0" />
+                     </HBox.margin>
+                  </ListView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

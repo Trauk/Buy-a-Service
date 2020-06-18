@@ -22,7 +22,64 @@ public class JsonController
         }
         return jsonList;
     }
+
     public static void writeArrayUser(String filePath, List<JsonUser> lst)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try
+        {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath), lst);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public static JsonClient readClient(String filePath)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        File file = new File(filePath);
+        JsonClient jsonObj = null;
+        try
+        {
+            jsonObj = objectMapper.readValue(file, JsonClient.class);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return jsonObj;
+    }
+
+    public static void writeClient(String filePath, JsonClient jc)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try
+        {
+            File file = new File(filePath);
+            file.getParentFile().mkdirs();
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, jc);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public static List<JsonDomain> readArrayDomain(String filePath)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        File file = new File(filePath);
+        List<JsonDomain> jsonList = null;
+        try
+        {
+            jsonList = objectMapper.readValue(file, new TypeReference<List<JsonDomain>>(){});
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return jsonList;
+    }
+
+    public static void writeArrayDomain(String filePath, List<JsonDomain> lst)
     {
         ObjectMapper objectMapper = new ObjectMapper();
         try

@@ -1,3 +1,4 @@
+import Handler.SceneHandler;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -32,6 +33,9 @@ public class Main extends Application
         User users = new User("testJson.json");
         LogSignMenu.setUsers(users);
         LogSignMenu.setStage(window);
+
+        SceneHandler.setUsers(users);
+        SceneHandler.setStage(window);
         //window.setTitle("Login");
 
 
@@ -135,5 +139,7 @@ public class Main extends Application
     {
         return window;
     }
+
+
 
 }

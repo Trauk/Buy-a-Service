@@ -34,6 +34,11 @@ public class User
         return this.listUsr.stream().filter(user -> username.equals(user.getUsername())).findAny().orElse(null);
     }
 
+    public String getType(String username)
+    {
+        return getUser(username).getType();
+    }
+
     public void setPassword(String username, String password)
     {
         getUser(username).setPassword(encrypt(password));

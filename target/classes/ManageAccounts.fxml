@@ -23,7 +23,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@../../../resources/style.css">
+            <VBox alignment="CENTER" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@style.css">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" text="Search user">
                      <font>
@@ -35,12 +35,12 @@
                   </Label>
                   <ImageView fitHeight="288.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../data/imgSrc/admin-menu/candidate.png" />
+                        <Image url="@imgSrc/admin-menu/candidate.png" />
                      </image>
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@../../../resources/style.css" GridPane.columnIndex="1">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@style.css" GridPane.columnIndex="1">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" text="Add user">
                      <font>
@@ -52,12 +52,12 @@
                   </Label>
                   <ImageView fitHeight="288.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../data/imgSrc/admin-menu/add.png" />
+                        <Image url="@imgSrc/admin-menu/add.png" />
                      </image>
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@../../../resources/style.css" GridPane.columnIndex="2">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#backButtonAction" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@style.css" GridPane.columnIndex="2">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" text="Back">
                      <font>
@@ -69,7 +69,7 @@
                   </Label>
                   <ImageView fitHeight="288.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../data/imgSrc/admin-menu/return.png" />
+                        <Image url="@imgSrc/admin-menu/return.png" />
                      </image>
                   </ImageView>
                </children>
