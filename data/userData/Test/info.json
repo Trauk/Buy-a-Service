@@ -1,0 +1,11 @@
+{
+  "username" : "Test",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider",
+  "email" : "1234",
+  "firstName" : "12345",
+  "lastName" : "12345",
+  "phone" : "1234",
+  "infoPath" : "data/userData/Test/info.json",
+  "domain" : "Law"
+}
