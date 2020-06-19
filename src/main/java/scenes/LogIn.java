@@ -92,7 +92,7 @@ public class LogIn extends LogSignMenu
         boolean res = users.comparePassword(username, passField.getText());
         if(res == true)
         {
-            Alert.display("Success", "Login successful!");
+
             //AdminMenu.InitScene();
             //System.out.println(users.getType(userInput.getText()));
             LogInHandler.logIn(userInput.getText(),users.getType(username));

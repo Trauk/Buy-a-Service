@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ManageDomains">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ManageSpRequests">
    <children>
       <HBox prefHeight="800.0" prefWidth="1200.0">
          <children>
@@ -15,22 +15,27 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="800.0" prefWidth="202.0">
                      <children>
-                        <Button minWidth="116.0" mnemonicParsing="false" onMouseClicked="#addDomainButtonAction" styleClass="buttonAdmin" stylesheets="@style.css" text="Add">
+                        <Button minWidth="132.0" mnemonicParsing="false" onMouseClicked="#approveButtonAction" styleClass="approveButton" stylesheets="@style.css" text="Approve">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin></Button>
-                        <Button mnemonicParsing="false" onMouseClicked="#deleteDomainButtonAction" styleClass="buttonAdmin" text="Delete">
+                        <Button minWidth="132.0" mnemonicParsing="false" onMouseClicked="#rejectButtonAction" styleClass="rejectButton" text="Reject">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin></Button>
-                        <Button minWidth="116.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back" />
+                        <Button layoutX="54.0" layoutY="381.0" minWidth="132.0" mnemonicParsing="false" onMouseClicked="#ViewButtonAction" styleClass="buttonAdmin" text="View">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button minWidth="132.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back" />
                      </children>
                   </VBox>
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <ListView fx:id="domainView" minWidth="500.0" prefHeight="757.0" prefWidth="500.0" styleClass="list-cell">
+                  <ListView fx:id="listView" minWidth="500.0" prefHeight="757.0" prefWidth="500.0" styleClass="list-cell">
                      <HBox.margin>
                         <Insets bottom="50.0" top="50.0" />
                      </HBox.margin>

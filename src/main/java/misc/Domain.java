@@ -27,7 +27,7 @@ public class Domain
         return listDomain.stream().filter(dm -> domain.equals(dm.getDomain())).findAny().orElse(null);
     }
 
-    private static int getIndex(String domain)
+    public static int getIndex(String domain)
     {
         return listDomain.indexOf(getDomain(domain));
     }
@@ -40,6 +40,13 @@ public class Domain
             listDomain.remove(pos);
             JsonController.writeArrayDomain(path, listDomain);
         }
+    }
+
+    public static boolean exists(String element)
+    {
+        if(getDomain(element) == null)
+            return false;
+        return true;
     }
 
     public static void addElement(String domain)

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ManageDomains">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ManageDomains">
    <children>
       <HBox prefHeight="800.0" prefWidth="1200.0">
          <children>

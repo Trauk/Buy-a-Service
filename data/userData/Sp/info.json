@@ -1,0 +1,13 @@
+{
+  "username" : "Sp",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider",
+  "email" : "rabianul@yahoo.com",
+  "firstName" : "Musca",
+  "lastName" : "Rabinul",
+  "phone" : "12345",
+  "infoPath" : "data/userData/Sp/info.json",
+  "certificatePath" : "data/userData/Sp/certificate.jpg",
+  "domain" : "Law",
+  "approved" : "approved"
+}

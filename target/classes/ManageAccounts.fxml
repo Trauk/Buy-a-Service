@@ -23,7 +23,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@style.css">
+            <VBox alignment="CENTER" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@styleAdmin.css">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" text="Search user">
                      <font>
@@ -40,7 +40,7 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@style.css" GridPane.columnIndex="1">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@styleAdmin.css" GridPane.columnIndex="1">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" text="Add user">
                      <font>
@@ -57,7 +57,7 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#backButtonAction" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@style.css" GridPane.columnIndex="2">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#backButtonAction" prefHeight="751.0" prefWidth="136.0" styleClass="container" stylesheets="@styleAdmin.css" GridPane.columnIndex="2">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" text="Back">
                      <font>

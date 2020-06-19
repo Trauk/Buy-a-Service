@@ -47,4 +47,9 @@ public class AdminMenu
         ManageDomains.InitScene();
     }
 
+    public void manageSpReqButtonAction() throws IOException
+    {
+        ManageSpRequests.InitScene();
+    }
+
 }
