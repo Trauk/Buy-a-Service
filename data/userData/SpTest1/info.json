@@ -1,0 +1,13 @@
+{
+  "username" : "SpTest1",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider",
+  "email" : "1234",
+  "firstName" : "Bill",
+  "lastName" : "1234",
+  "phone" : "1234",
+  "infoPath" : "data/userData/SpTest1/info.json",
+  "certificatePath" : "data/userData/SpTest1/certificate.png",
+  "domain" : "Woodworking",
+  "approved" : "approved"
+}
