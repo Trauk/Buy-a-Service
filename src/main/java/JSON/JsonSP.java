@@ -7,7 +7,9 @@ public class JsonSP
     private String type;
     private String email,firstName,lastName,phone;
     private String infoPath;
+    private String certificatePath;
     private String domain;
+    private String approved = "pending";
 
     public String getUsername()
     {
@@ -97,5 +99,25 @@ public class JsonSP
     public void setDomain(String domain)
     {
         this.domain = domain;
+    }
+
+    public String getApproved()
+    {
+        return approved;
+    }
+
+    public void setApproved(String approved)
+    {
+        this.approved = approved;
+    }
+
+    public String getCertificatePath()
+    {
+        return certificatePath;
+    }
+
+    public void setCertificatePath(String certificatePath)
+    {
+        this.certificatePath = certificatePath;
     }
 }

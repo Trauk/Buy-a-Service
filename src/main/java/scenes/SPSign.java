@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.FileChooser;
 import misc.Domain;
+import misc.PendingSP;
 import users.Sp;
 import users.User;
 
@@ -59,7 +60,7 @@ public class SPSign extends LogSignMenu
         {};
     }
 
-    public void SPDataSave()
+    public void SPDataSave(String certificatePath)
     {
         String path = "data/userData/" + userField.getText() + "/";
         JsonSP jp = new JsonSP();
@@ -71,7 +72,11 @@ public class SPSign extends LogSignMenu
         jp.setType(LogSignMenu.type);
         jp.setPhone(phoneField.getText());
         jp.setInfoPath(path+"info.json");
+        jp.setCertificatePath(certificatePath);
         jp.setDomain(domainCombo.getValue().toString());
+        jp.setApproved("pending");
+        PendingSP.updateList();
+        PendingSP.addElement(userField.getText());
         Sp.writeSP(path+"info.json",jp);
 
     }
@@ -97,12 +102,14 @@ public class SPSign extends LogSignMenu
             ju.setType(LogSignMenu.type);
             users.getListUsr().add(ju);
             users.writeUser();
-
-            SPDataSave();
             int lastIndexOf = selectedFilePath.lastIndexOf(".");
-            String toPath = "data/userData/" + userField.getText() + "/ceritificate" + selectedFilePath.substring(lastIndexOf);
+            String toPath = "data/userData/" + userField.getText() + "/certificate" + selectedFilePath.substring(lastIndexOf);
+            SPDataSave(toPath);
             Files.copy(Paths.get(selectedFilePath), Paths.get(toPath), StandardCopyOption.REPLACE_EXISTING);
-            Alert.display("Success", "Account created!");
+
+
+
+            Alert.display("Success", "Request is pending!");
             LogSignMenu.InitScene();
         }
     }
