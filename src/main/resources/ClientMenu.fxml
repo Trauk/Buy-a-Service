@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.AdminMenu">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" stylesheets="@styleClient.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.client.ClientMenu">
    <children>
-      <GridPane alignment="CENTER" gridLinesVisible="true" layoutY="-1.0" prefHeight="800.0" prefWidth="1207.0" stylesheets="@styleAdmin.css">
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutY="-1.0" prefHeight="800.0" prefWidth="1207.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -22,31 +21,26 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" onMouseClicked="#manageAccButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="1">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Manage Accounts">
+                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Offers" textFill="WHITE">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
                   </Label>
                   <ImageView fitHeight="196.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgSrc/admin-menu/pencil.png" />
+                        <Image url="@imgSrc/admin-menu/discount.png" />
                      </image>
 
                   </ImageView>
                </children>
-               <stylesheets>
-                  <URL value="@style.css" />
-                  <URL value="@styleAdmin.css" />
-               </stylesheets>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#manageSpReqButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" stylesheets="@styleAdmin.css" GridPane.columnIndex="1">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="container">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Manage sp requests">
+                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Requests" textFill="WHITE">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
@@ -58,9 +52,9 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#editAccount" prefHeight="200.0" prefWidth="100.0" styleClass="container" stylesheets="@styleAdmin.css" GridPane.columnIndex="3">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#editAccount" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Account settings">
+                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Account settings" textFill="WHITE">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
@@ -72,9 +66,9 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="916.0" layoutY="10.0" onMouseClicked="#logOutAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" layoutX="916.0" layoutY="10.0" onMouseClicked="#logOutAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="3">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Log out">
+                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Log out" textFill="WHITE">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
@@ -82,20 +76,6 @@
                   <ImageView fitHeight="196.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@imgSrc/admin-menu/exit.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </VBox>
-            <VBox alignment="CENTER" onMouseClicked="#manageDomainsButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2">
-               <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Manage domains">
-                     <font>
-                        <Font name="Verdana Bold" size="25.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="196.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@imgSrc/scenes/support.png" />
                      </image>
                   </ImageView>
                </children>

@@ -29,11 +29,6 @@
                         <Font name="Verdana Italic" size="30.0" />
                      </font>
                   </Label>
-                  <Label fx:id="fxRatingLabel" text="Rating 0.0/0.0" textFill="#e4e110">
-                     <font>
-                        <Font name="Verdana Italic" size="20.0" />
-                     </font>
-                  </Label>
                   <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">

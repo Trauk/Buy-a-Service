@@ -4,6 +4,8 @@ import JSON.JsonSP;
 import misc.Domain;
 import scenes.Alert;
 import scenes.admin.AdminMenu;
+import scenes.client.ClientMenu;
+import scenes.sp.SPMenu;
 import users.Sp;
 
 import java.io.IOException;
@@ -18,6 +20,7 @@ public class LogInHandler
             loggedUser = username;
             Alert.display("Success", "Login successful!");
             AdminMenu.InitScene();
+
         }
         if(type.equals("ServiceProvider"))
         {
@@ -50,6 +53,7 @@ public class LogInHandler
             {
                 loggedUser = username;
                 Alert.display("Success", "Login successful!");
+                SPMenu.InitScene();
                 return;
             }
 
@@ -58,6 +62,9 @@ public class LogInHandler
         {
             loggedUser = username;
             Alert.display("Success", "Login successful!");
+            ClientMenu.InitScene();
+
+
         }
     }
 }

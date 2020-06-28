@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.AdminMenu">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.AdminMenu">
    <children>
       <GridPane alignment="CENTER" gridLinesVisible="true" layoutY="-1.0" prefHeight="800.0" prefWidth="1207.0" stylesheets="@styleAdmin.css">
         <columnConstraints>
@@ -72,20 +72,6 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="container" stylesheets="@styleAdmin.css" GridPane.columnIndex="2">
-               <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="View offers">
-                     <font>
-                        <Font name="Verdana Bold" size="25.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="196.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@imgSrc/admin-menu/discount.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </VBox>
             <VBox alignment="CENTER" layoutX="916.0" layoutY="10.0" onMouseClicked="#logOutAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
                   <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Log out">
@@ -100,7 +86,7 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" onMouseClicked="#manageDomainsButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" onMouseClicked="#manageDomainsButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2">
                <children>
                   <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Manage domains">
                      <font>

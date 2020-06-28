@@ -2,15 +2,15 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ViewUserSp">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@styleSP.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.sp.SelfEditSP">
    <children>
       <HBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0">
          <children>
@@ -24,11 +24,47 @@
                         <Font name="Verdana Bold" size="40.0" />
                      </font>
                   </Label>
-                  <Label fx:id="fxDomainLabel" text="Domain" textFill="#00000098">
+                  <Label text="Service provider" textFill="#00000098">
                      <font>
                         <Font name="Verdana Italic" size="30.0" />
                      </font>
                   </Label>
+                  <HBox alignment="CENTER_RIGHT" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Old password: " textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="fxOldPassword">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="150.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="149.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="New password: " textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="fxNewPassword">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#changePasswordButtonAction" styleClass="buttonAdmin" text="Change password" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
                   <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
@@ -45,13 +81,16 @@
                               </Button>
                               <Button fx:id="fxApplyButton" disable="true" mnemonicParsing="false" onMouseClicked="#applyButtonAction" styleClass="buttonAdmin" text="Apply" />
                            </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
                         </HBox>
                      </children>
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                      <VBox.margin>
-                        <Insets top="400.0" />
+                        <Insets top="250.0" />
                      </VBox.margin>
                   </VBox>
                </children>
@@ -60,7 +99,7 @@
                <children>
                   <HBox alignment="CENTER_RIGHT" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
                      <children>
-                        <Label text="Username: ">
+                        <Label text="Username: " textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="25.0" />
                            </font>
@@ -74,7 +113,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="390.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
                      <children>
-                        <Label text="Email: ">
+                        <Label text="Email: " textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="25.0" />
                            </font>
@@ -88,7 +127,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="410.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
                      <children>
-                        <Label text="First name: ">
+                        <Label text="First name: " textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="25.0" />
                            </font>
@@ -102,7 +141,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="430.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
                      <children>
-                        <Label text="Last name: ">
+                        <Label text="Last name: " textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="25.0" />
                            </font>
@@ -116,7 +155,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="450.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
                      <children>
-                        <Label text="Phone: ">
+                        <Label text="Phone: " textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="25.0" />
                            </font>
@@ -128,21 +167,6 @@
                         </TextField>
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="470.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
-                     <children>
-                        <Label text="Domain: ">
-                           <font>
-                              <Font name="Verdana" size="25.0" />
-                           </font>
-                        </Label>
-                        <ComboBox fx:id="fxDomain" disable="true" prefHeight="35.0" prefWidth="236.0" />
-                     </children>
-                  </HBox>
-                  <Button mnemonicParsing="false" onMouseClicked="#OpenCertificateButtonAction" styleClass="buttonAdmin" text="Open certificate">
-                     <VBox.margin>
-                        <Insets top="5.0" />
-                     </VBox.margin>
-                  </Button>
                </children>
             </VBox>
          </children>

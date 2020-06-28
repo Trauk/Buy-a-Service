@@ -34,6 +34,11 @@ public class SelfEditAdmin
             Alert.display("Error","Fields cannot be left empty!");
             return;
         }
+        if(oldPass.equals(newPass))
+        {
+            Alert.display("Error","Old pass and new pass cannot be the same!");
+            return;
+        }
         if(SceneHandler.getUsers().comparePassword(LogInHandler.loggedUser,oldPass) == true)
         {
             SceneHandler.getUsers().setPassword(LogInHandler.loggedUser,newPass);
