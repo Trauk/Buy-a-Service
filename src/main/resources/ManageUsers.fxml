@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ManageUsers">
+   <children>
+      <HBox prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="800.0" prefWidth="202.0">
+                     <children>
+                        <Button minWidth="116.0" mnemonicParsing="false" onMouseClicked="#viewButtonAction" styleClass="buttonAdmin" stylesheets="@style.css" text="View">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></Button>
+                        <Button minWidth="116.0" mnemonicParsing="false" onMouseClicked="#filterButtonAction" styleClass="buttonAdmin" text="Filter">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></Button>
+                        <Button minWidth="116.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="listView" minWidth="500.0" prefHeight="757.0" prefWidth="500.0" styleClass="list-cell">
+                     <HBox.margin>
+                        <Insets bottom="50.0" top="50.0" />
+                     </HBox.margin>
+                  </ListView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+{
+  "username" : "ClientAdaugat2",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client",
+  "email" : "client@mail.com",
+  "firstName" : "Client",
+  "lastName" : "Client",
+  "phone" : "Client",
+  "infoPath" : "data/userData/ClientAdaugat2/info.json"
+}

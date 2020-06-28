@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.CreateAccount">
+   <children>
+      <HBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="500.0">
+               <children>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="fxFirstNameLabel" text="Name" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="fxLastNameLabel" layoutX="10.0" layoutY="10.0" text="LastName" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="fxTypeLabel" text="Type" textFill="#00000098">
+                     <font>
+                        <Font name="Verdana Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="fxCreateButton" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#createAccountButtonAction" styleClass="buttonAdmin" text="Create">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="400.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" minWidth="500.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="478.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Type: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="fxType" onAction="#typeOnChange" prefHeight="35.0" prefWidth="236.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Username: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxUsername">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="258.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Password: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxPassword">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="fxEmailRow" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="390.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Email: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxEmail">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="fxFirstNameRow" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="410.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="First name: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxFirstName" onAction="#firstNameOnChange">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="fxLastNameRow" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="430.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Last name: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxLastName" onAction="#lastNameOnChange">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="fxPhoneRow" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="450.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Phone: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxPhone">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="fxDomainRow" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="470.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Domain: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="fxDomain" prefHeight="35.0" prefWidth="236.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="fxCertificateRow" alignment="CENTER_RIGHT">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="fileNameLabel" text="No file selected">
+                           <font>
+                              <Font name="Verdana Italic" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onMouseClicked="#browseButtonAction" styleClass="buttonAdmin" text="Choose certificate" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

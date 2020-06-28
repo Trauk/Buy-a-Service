@@ -4,7 +4,7 @@
   "type" : "ServiceProvider",
   "email" : "1234",
   "firstName" : "Bill",
-  "lastName" : "1234",
+  "lastName" : "Johnson",
   "phone" : "1234",
   "infoPath" : "data/userData/SpTest1/info.json",
   "certificatePath" : "data/userData/SpTest1/certificate.png",

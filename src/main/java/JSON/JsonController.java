@@ -121,19 +121,19 @@ public class JsonController
     }
 
     public static List<JsonPendingSP> readArrayPending(String filePath)
+{
+    ObjectMapper objectMapper = new ObjectMapper();
+    File file = new File(filePath);
+    List<JsonPendingSP> jsonList = null;
+    try
     {
-        ObjectMapper objectMapper = new ObjectMapper();
-        File file = new File(filePath);
-        List<JsonPendingSP> jsonList = null;
-        try
-        {
-            jsonList = objectMapper.readValue(file, new TypeReference<List<JsonPendingSP>>(){});
-        } catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        return jsonList;
+        jsonList = objectMapper.readValue(file, new TypeReference<List<JsonPendingSP>>(){});
+    } catch (IOException e)
+    {
+        e.printStackTrace();
     }
+    return jsonList;
+}
 
     public static void writeArrayPending(String filePath, List<JsonPendingSP> lst)
     {
@@ -146,5 +146,8 @@ public class JsonController
             e.printStackTrace();
         }
     }
+
+
+
 
 }

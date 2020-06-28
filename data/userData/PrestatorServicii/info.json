@@ -1,0 +1,13 @@
+{
+  "username" : "PrestatorServicii",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider",
+  "email" : "prestator@mail.com",
+  "firstName" : "Prest",
+  "lastName" : "Tor",
+  "phone" : "1452",
+  "infoPath" : "data/userData/PrestatorServicii/info.json",
+  "certificatePath" : "C:\\Users\\Thrauk\\Desktop\\callofct.PNG",
+  "domain" : "Hitman",
+  "approved" : "approved"
+}

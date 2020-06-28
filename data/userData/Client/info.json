@@ -2,9 +2,9 @@
   "username" : "Client",
   "password" : "81dc9bdb52d04dc20036dbd8313ed055",
   "type" : "Client",
-  "email" : "1234",
-  "firstName" : "1234",
-  "lastName" : "1234",
-  "phone" : "1234",
+  "email" : "client@office.com",
+  "firstName" : "Customer",
+  "lastName" : "Dummy",
+  "phone" : "981224",
   "infoPath" : "data/userData/Client/info.json"
 }

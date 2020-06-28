@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.ViewUserSp">
+   <children>
+      <HBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="fxNameLabel" text="Name LastName" textFill="WHITE" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Verdana Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fxDomainLabel" text="Domain" textFill="#00000098">
+                     <font>
+                        <Font name="Verdana Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="fxEditButton" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#editButtonAction" styleClass="buttonAdmin" text="Edit">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="fxApplyButton" disable="true" mnemonicParsing="false" onMouseClicked="#applyButtonAction" styleClass="buttonAdmin" text="Apply" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="400.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" minWidth="500.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Username: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxUsername" editable="false">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="390.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Email: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxEmail" editable="false">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="410.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="First name: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxFirstName" editable="false">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="430.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Last name: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxLastName" editable="false">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="450.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Phone: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fxPhone" editable="false">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="470.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Domain: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="fxDomain" disable="true" prefHeight="35.0" prefWidth="236.0" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onMouseClicked="#OpenCertificateButtonAction" styleClass="buttonAdmin" text="Open certificate">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -39,4 +39,17 @@ public class ManageAccounts
         AdminMenu.InitScene();
     }
 
+    public void manageUsersButtonAction() throws IOException
+    {
+        ManageUsers.InitScene();
+    }
+
+
+    public void createUserButtonAction() throws IOException
+    {
+        CreateAccount.InitScene();
+    }
+
+
+
 }

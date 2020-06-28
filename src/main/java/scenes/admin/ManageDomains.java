@@ -57,8 +57,12 @@ public class ManageDomains
     public void addDomainButtonAction()
     {
         String ret = TextFieldBox.display("Add domain","Enter new domain");
-        Domain.addElement(ret);
-        domainView.getItems().addAll(ret);
+        if(ret!=null)
+        {
+            Domain.addElement(ret);
+            domainView.getItems().addAll(ret);
+        }
+
     }
 
     public void deleteDomainButtonAction()
