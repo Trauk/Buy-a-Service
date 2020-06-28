@@ -86,10 +86,14 @@ public class ManageSpRequests
     }
     public void ViewButtonAction() throws IOException
     {
-        selectedItem = listView.getSelectionModel().getSelectedIndex();
         String ret = listView.getSelectionModel().getSelectedItem();
-        ViewUser.setUsername(ret);
-        ViewUser.InitScene();
+        if(ret != null)
+        {
+            selectedItem = listView.getSelectionModel().getSelectedIndex();
+            ViewUser.setUsername(ret);
+            ViewUser.InitScene();
+        }
+
     }
 
 

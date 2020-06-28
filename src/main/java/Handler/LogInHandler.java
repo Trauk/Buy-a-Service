@@ -10,15 +10,18 @@ import java.io.IOException;
 
 public class LogInHandler
 {
+    public static String loggedUser;
     public static void logIn(String username, String type) throws IOException
     {
         if(type.equals("Admin"))
         {
+            loggedUser = username;
             Alert.display("Success", "Login successful!");
             AdminMenu.InitScene();
         }
         if(type.equals("ServiceProvider"))
         {
+
             Domain.updateList();
             JsonSP jp = Sp.readSP("data/userData/" +username + "/info.json");
             String approved = jp.getApproved();
@@ -45,6 +48,7 @@ public class LogInHandler
             }
             if(approved.equals("approved"))
             {
+                loggedUser = username;
                 Alert.display("Success", "Login successful!");
                 return;
             }
@@ -52,6 +56,7 @@ public class LogInHandler
         }
         if(type.equals("Client"))
         {
+            loggedUser = username;
             Alert.display("Success", "Login successful!");
         }
     }

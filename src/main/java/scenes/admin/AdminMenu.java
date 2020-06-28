@@ -1,5 +1,6 @@
 package scenes.admin;
 
+import Handler.LogInHandler;
 import Handler.SceneHandler;
 import javafx.scene.Scene;
 import scenes.LogSignMenu;
@@ -34,6 +35,7 @@ public class AdminMenu
 
     public void logOutAction() throws IOException
     {
+        LogInHandler.loggedUser = null;
         LogSignMenu.InitScene();
     }
 
@@ -51,5 +53,11 @@ public class AdminMenu
     {
         ManageSpRequests.InitScene();
     }
+
+    public void editAccount() throws IOException
+    {
+        SelfEditAdmin.InitScene();
+    }
+
 
 }

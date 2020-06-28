@@ -6,6 +6,7 @@ import JSON.JsonUser;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class User
@@ -111,6 +112,16 @@ public class User
         }
         return hashtext;
         //return text;
+    }
+
+    public ArrayList<String> getUsernameList()
+    {
+        ArrayList<String> ret = new ArrayList<String>();
+        for(JsonUser x:listUsr)
+        {
+            ret.add(x.getUsername());
+        }
+        return ret;
     }
 
 }

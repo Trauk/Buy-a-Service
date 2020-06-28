@@ -2,9 +2,9 @@
   "username" : "Bjorn",
   "password" : "1fe7068f8d12c7abbbac9a07cf0d95df",
   "type" : "Client",
-  "email" : "412421",
-  "firstName" : "21412",
-  "lastName" : "421421",
+  "email" : "bjorn@mail.com",
+  "firstName" : "Bjorn",
+  "lastName" : "Bjronulescu",
   "phone" : "1241242",
   "infoPath" : "data/userData/Bjorn/info.json"
 }

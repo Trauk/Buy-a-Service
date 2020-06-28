@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="backgroundAdmin" stylesheets="@styleAdmin.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.admin.SelfEditAdmin">
+   <children>
+      <HBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="800.0" prefWidth="1193.0">
+               <children>
+                  <Label fx:id="fxNameLabel" text="Username" textFill="WHITE" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Verdana Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label text="Admin" textFill="#00000098">
+                     <font>
+                        <Font name="Verdana Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Old password: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="fxOldPassword">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="-10.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="150.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="149.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label text="New password: ">
+                           <font>
+                              <Font name="Verdana" size="25.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="fxNewPassword">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="59.0" prefWidth="1192.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#changePasswordButtonAction" styleClass="buttonAdmin" text="Change password" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="250.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
