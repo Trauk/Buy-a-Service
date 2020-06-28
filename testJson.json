@@ -94,4 +94,8 @@
   "username" : "PrestatorServicii",
   "password" : "81dc9bdb52d04dc20036dbd8313ed055",
   "type" : "ServiceProvider"
+}, {
+  "username" : "AdminTest",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Admin"
 } ]
