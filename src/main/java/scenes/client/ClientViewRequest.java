@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ClientViewRequest
 {
-    public static ObservableList list = FXCollections.observableArrayList();
+        public static ObservableList list = FXCollections.observableArrayList();
     @FXML
     public ListView<String> listView;
     private static int selectedItem = -1;
