@@ -38,7 +38,7 @@ public class ClientViewSingleRequest
 
     public void backButtonAction() throws IOException
     {
-        ClientRequestMenu.InitScene();
+        ClientViewRequest.InitScene();
     }
 
     public static void setJr(JsonRequest obj)

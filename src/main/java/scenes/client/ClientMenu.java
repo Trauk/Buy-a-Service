@@ -30,5 +30,10 @@ public class ClientMenu
         ClientRequestMenu.InitScene();
     }
 
+    public void offerMenu() throws IOException
+    {
+        ClientViewOffers.InitScene();
+    }
+
 
 }

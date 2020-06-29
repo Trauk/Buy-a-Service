@@ -1,4 +1,4 @@
-package scenes.sp;
+package scenes.client;
 
 import Handler.SceneHandler;
 import JSON.JsonOffer;
@@ -9,7 +9,7 @@ import users.Sp;
 
 import java.io.IOException;
 
-public class SpViewSingleOffer
+public class ClientViewSingleOffer
 {
     @FXML
     Label fxRequestTitle,fxRequestDetails,fxRequestDomain,fxName,fxPhone,fxEmail,fxUsername;
@@ -17,7 +17,7 @@ public class SpViewSingleOffer
 
     public static void InitScene() throws IOException
     {
-        SceneHandler.InitScene("SpViewSingleOffer","View offer");
+        SceneHandler.InitScene("ClientViewSingleOffer","View offer");
     }
 
     public void initialize()
@@ -38,7 +38,7 @@ public class SpViewSingleOffer
 
     public void backButtonAction() throws IOException
     {
-        SpViewOffers.InitScene();
+        ClientViewOffers.InitScene();
     }
 
     public static void setJr(JsonOffer obj)

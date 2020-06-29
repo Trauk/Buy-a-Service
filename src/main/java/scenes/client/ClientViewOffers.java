@@ -1,48 +1,56 @@
-package scenes.sp;
+package scenes.client;
 
-import Handler.LogInHandler;
 import Handler.SceneHandler;
-import JSON.JsonRequest;
-import JSON.JsonSP;
+import JSON.JsonOffer;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
+import misc.Domain;
+import misc.Offer;
 import misc.Request;
-import users.Sp;
 
 import java.io.IOException;
 import java.util.List;
 
-public class SpViewRequests
+public class ClientViewOffers
 {
     public static ObservableList list = FXCollections.observableArrayList();
     @FXML
     public ListView<String> listView;
+    @FXML
+    public ComboBox fxDomain;
     private static int selectedItem = -1;
 
     protected static Scene scene;
 
     public static void InitScene() throws IOException
     {
-        SceneHandler.InitScene("SpViewRequests","View requests");
+        SceneHandler.InitScene("ClientViewOffers","View offers");
     }
 
     public void initialize()
     {
+        Offer.updateList();
+        Domain.updateList();
+        fxDomain.getItems().addAll(Domain.getStrList());
+        fxDomain.getSelectionModel().selectFirst();
         ViewOnLoad();
     }
 
     private void createList()
     {
-        JsonSP jp = Sp.readSP("data/userData/" + LogInHandler.loggedUser + "/info.json");
         list.clear();
         Request.updateList();
-        List<JsonRequest> ret = Request.getByDomain(jp.getDomain());
-        for(JsonRequest x:ret)
+        List<JsonOffer> ret = Offer.getByDomain(fxDomain.getValue().toString());
+        if(ret != null)
         {
-            list.add(x.getReqeustTitle());
+            for(JsonOffer x:ret)
+            {
+                list.add(x.getTitle());
+            }
         }
 
     }
@@ -60,27 +68,30 @@ public class SpViewRequests
 
     public void backButtonAction() throws IOException
     {
-        SPMenu.InitScene();
+        ClientMenu.InitScene();
         selectedItem = -1;
     }
 
+    public void selectAction()
+    {
+        ViewOnLoad();
+    }
 
-    public void viewRequest() throws IOException
+
+    public void viewOffer() throws IOException
     {
         String ret = listView.getSelectionModel().getSelectedItem();
         if(ret != null)
         {
-            JsonSP jp = Sp.readSP("data/userData/" + LogInHandler.loggedUser + "/info.json");
-            List<JsonRequest> objects = Request.getByDomain(jp.getDomain());
+            List<JsonOffer> objects = Offer.getByDomain(fxDomain.getValue().toString());
             selectedItem = listView.getSelectionModel().getSelectedIndex();
-            JsonRequest object = objects.get(selectedItem);
+            JsonOffer object = objects.get(selectedItem);
             if(object != null)
             {
-                SpViewSingleRequest.setJr(object);
-                SpViewSingleRequest.InitScene();
+                ClientViewSingleOffer.setJr(object);
+                ClientViewSingleOffer.InitScene();
             }
-
+            selectedItem = -1;
         }
     }
-
 }
