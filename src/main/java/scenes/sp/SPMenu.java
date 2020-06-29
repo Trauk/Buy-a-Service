@@ -32,5 +32,10 @@ public class SPMenu
         SpViewRequests.InitScene();
     }
 
+    public void offerMenu() throws IOException
+    {
+        SpOfferMenu.InitScene();
+    }
+
 
 }

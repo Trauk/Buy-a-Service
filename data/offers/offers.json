@@ -1,0 +1,11 @@
+[ {
+  "sender" : "SpTest1",
+  "domain" : "Woodworking",
+  "details" : "Test2",
+  "title" : "Test1"
+}, {
+  "sender" : "agent47",
+  "domain" : "Hitman",
+  "details" : "Ofer servicii de intimidare/recuperare",
+  "title" : "Recuperare datorii Los Angeles"
+} ]
