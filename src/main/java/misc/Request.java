@@ -5,11 +5,18 @@ import JSON.JsonRequest;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Request
 {
     private static List<JsonRequest> listRequest;
     private static String path = "data/clientRequests/requests.json";
+
+    public static List<JsonRequest> getBySender(String sender)
+    {
+        List<JsonRequest> ret = (listRequest).stream().filter(p -> ((p.getRequestSender()).equals(sender))).collect(Collectors.toList());
+        return ret;
+    }
 
     public static ArrayList<String> getStrListSender()
     {
@@ -40,6 +47,7 @@ public class Request
     {
         return listRequest.indexOf(getRequest(domain,title));
     }
+
 
     public static void deleteElement(String domain,String title)
     {
