@@ -33,9 +33,12 @@
   "requestDomain" : "Hitman",
   "requestDetails" : "Cineva trebuie sa imi plateasca o datorie",
   "reqeustTitle" : "Am nevoie de un serviciu mai delicat"
+
 }, {
   "requestSender" : "Client",
   "requestDomain" : "Hitman",
   "requestDetails" : "Get my friend out of gulag",
   "reqeustTitle" : "New contract"
+=======
+
 } ]
