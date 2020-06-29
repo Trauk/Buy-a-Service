@@ -26,7 +26,7 @@
                <children>
                   <ImageView fitHeight="227.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="file:/E:/Files/JavaWork/BuyService/src/main/resources/imgSrc/scenes/entrance.png" />
+                        <Image url="@imgSrc/scenes/entrance.png" />
                      </image>
                   </ImageView>
                   <Label text="Log in">
@@ -43,7 +43,7 @@
                <children>
                   <ImageView fitHeight="242.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="file:/E:/Files/JavaWork/BuyService/src/main/resources/imgSrc/scenes/add.png" />
+                        <Image url="@imgSrc/scenes/add.png" />
                      </image>
                   </ImageView>
                   <Label text="Sign up">

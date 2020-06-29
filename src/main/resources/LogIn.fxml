@@ -32,7 +32,7 @@
                            <children>
                               <ImageView fitHeight="75.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="file:/E:/Files/JavaWork/BuyService/src/main/resources/imgSrc/scenes/user.png" />
+                                    <Image url="@imgSrc/scenes/user.png" />
                                  </image>
                               </ImageView>
                               <Label text="Username:">
@@ -57,7 +57,7 @@
                            <children>
                               <ImageView fitHeight="75.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="file:/E:/Files/JavaWork/BuyService/src/main/resources/imgSrc/scenes/key.png" />
+                                    <Image url="@imgSrc/scenes/key.png" />
                                  </image>
                               </ImageView>
                               <Label text="Password:">

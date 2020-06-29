@@ -148,6 +148,34 @@ public class JsonController
     }
 
 
+    public static List<JsonRequest> readArrayRequest(String filePath)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        File file = new File(filePath);
+        List<JsonRequest> jsonList = null;
+        try
+        {
+            jsonList = objectMapper.readValue(file, new TypeReference<List<JsonRequest>>(){});
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return jsonList;
+    }
+
+    public static void writeArrayRequest(String filePath, List<JsonRequest> lst)
+    {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try
+        {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath), lst);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+
 
 
 }
