@@ -17,10 +17,19 @@
   "sender" : "SpTest1",
   "domain" : "Woodworking",
   "details" : "123214",
+
+  "title" : "Test"
+}, {
+  "sender" : "SpTest1",
+  "domain" : "Woodworking",
+  "details" : "12345",
+  "title" : "OfferNewTest"
+
   "title" : "123455"
 }, {
   "sender" : "SpTest1",
   "domain" : "Woodworking",
   "details" : "123214",
   "title" : "Test"
+
 } ]

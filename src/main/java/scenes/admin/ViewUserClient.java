@@ -19,7 +19,7 @@ public class ViewUserClient
     @FXML
     TextField fxUsername,fxEmail,fxFirstName,fxLastName,fxPhone;
     @FXML
-    Label fxNameLabel,fxDomainLabel,fxRatingLabel;
+    Label fxNameLabel,fxDomainLabel;
     @FXML
     Button fxEditButton,fxApplyButton;
     @FXML
