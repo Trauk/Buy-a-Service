@@ -23,6 +23,6 @@ public class ClientRequestMenu
 
     public void viewRequest() throws IOException
     {
-        CreateRequest.InitScene();
+        ClientViewRequest.InitScene();
     }
 }

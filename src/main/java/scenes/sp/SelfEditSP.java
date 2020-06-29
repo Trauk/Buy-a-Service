@@ -49,6 +49,7 @@ public class SelfEditSP
         fxFirstName.setText(jp.getFirstName());
         fxLastName.setText(jp.getLastName());
         fxPhone.setText(jp.getPhone());
+        fxDomainLabel.setText(jp.getDomain());
         fxNameLabel.setText(jp.getFirstName() + " " + jp.getLastName());
     }
 

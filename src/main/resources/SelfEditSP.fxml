@@ -24,11 +24,20 @@
                         <Font name="Verdana Bold" size="40.0" />
                      </font>
                   </Label>
-                  <Label text="Service provider" textFill="#00000098">
-                     <font>
-                        <Font name="Verdana Italic" size="30.0" />
-                     </font>
-                  </Label>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="272.0" text="Service provider," textFill="#00000098">
+                           <font>
+                              <Font name="Verdana Italic" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxDomainLabel" layoutX="10.0" layoutY="10.0" text="Domain" textFill="#00000098">
+                           <font>
+                              <Font name="Verdana Italic" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
                   <HBox alignment="CENTER_RIGHT" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
                      <children>
                         <Label text="Old password: " textFill="WHITE">

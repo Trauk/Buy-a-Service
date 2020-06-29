@@ -19,15 +19,16 @@
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           
         </rowConstraints>
          <children>
             <VBox alignment="CENTER" onMouseClicked="#manageAccButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Manage Accounts">
+                  <Label alignment="CENTER" prefHeight="126.0" prefWidth="242.0" text="Manage Accounts" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
@@ -46,7 +47,7 @@
             </VBox>
             <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#manageSpReqButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" stylesheets="@styleAdmin.css" GridPane.columnIndex="1">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Manage sp requests">
+                  <Label alignment="CENTER" prefHeight="125.0" prefWidth="242.0" text="Manage sp requests" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
@@ -60,7 +61,7 @@
             </VBox>
             <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#editAccount" prefHeight="200.0" prefWidth="100.0" styleClass="container" stylesheets="@styleAdmin.css" GridPane.columnIndex="3">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Account settings">
+                  <Label alignment="CENTER" prefHeight="101.0" prefWidth="241.0" text="Account  settings" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
@@ -72,9 +73,9 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="916.0" layoutY="10.0" onMouseClicked="#logOutAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" layoutX="916.0" layoutY="10.0" onMouseClicked="#logOutAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="4">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Log out">
+                  <Label alignment="CENTER" prefHeight="99.0" prefWidth="241.0" text="Log out">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
@@ -88,7 +89,7 @@
             </VBox>
             <VBox alignment="CENTER" onMouseClicked="#manageDomainsButtonAction" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2">
                <children>
-                  <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Manage domains">
+                  <Label alignment="CENTER" prefHeight="114.0" prefWidth="241.0" text="Manage  domains" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font name="Verdana Bold" size="25.0" />
                      </font>
