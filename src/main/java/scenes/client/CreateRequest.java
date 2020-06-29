@@ -59,6 +59,7 @@ public class CreateRequest
             return;
         }
         Request.addElement(domain, LogInHandler.loggedUser, details, title);
+        Alert.display("Success","Request created successfully!");
 
     }
 
