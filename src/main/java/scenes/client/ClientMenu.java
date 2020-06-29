@@ -2,14 +2,12 @@ package scenes.client;
 
 import Handler.LogInHandler;
 import Handler.SceneHandler;
-import javafx.scene.Scene;
 import scenes.LogSignMenu;
 
 import java.io.IOException;
 
 public class ClientMenu
 {
-    protected static Scene scene;
 
     public static void InitScene() throws IOException
     {
@@ -25,6 +23,11 @@ public class ClientMenu
     public void editAccount() throws IOException
     {
         SelfEditClient.InitScene();
+    }
+
+    public void requestMenu() throws IOException
+    {
+        ClientRequestMenu.InitScene();
     }
 
 

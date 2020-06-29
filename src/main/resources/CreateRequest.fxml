@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@styleClient.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.client.CreateRequest">
+   <children>
+      <VBox alignment="CENTER" prefHeight="800.0" prefWidth="1193.0">
+         <children>
+            <Label fx:id="fxNameLabel" text="Create request" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana Bold" size="40.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Request title: " textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fxTitle">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="149.0" minHeight="100.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Request details: " textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="fxDetails" prefHeight="122.0" prefWidth="400.0" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="200.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="1192.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Domain: " textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="25.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="fxDomain" minHeight="40.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets right="-100.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="421.0" prefHeight="59.0" prefWidth="1192.0">
+               <children>
+                  <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#createRequestAction" styleClass="buttonAdmin" text="Create" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" minWidth="150.0" prefHeight="100.0" prefWidth="150.0">
+               <children>
+                  <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back">
+                     <HBox.margin>
+                        <Insets left="50.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="250.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
