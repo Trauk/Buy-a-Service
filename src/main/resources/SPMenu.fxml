@@ -38,7 +38,7 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="container">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#viewRequests" prefHeight="200.0" prefWidth="100.0" styleClass="container">
                <children>
                   <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Requests" textFill="WHITE">
                      <font>
