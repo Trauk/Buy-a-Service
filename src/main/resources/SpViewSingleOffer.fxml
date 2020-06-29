@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@styleSP.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.sp.SpViewSingleOffer">
+   <children>
+      <VBox alignment="CENTER" prefHeight="800.0" prefWidth="1193.0">
+         <children>
+            <Label fx:id="fxRequestTitle" text="Offer title" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="fxRequestDomain" layoutX="463.0" layoutY="50.0" text="Domain" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Verdana Italic" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="fxName" text="Name" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="fxPhone" text="Phone" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="fxEmail" text="Email" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="fxUsername" layoutX="508.0" layoutY="12.0" text="Username" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="fxRequestDetails" alignment="TOP_LEFT" minHeight="173.0" minWidth="300.0" prefHeight="575.0" prefWidth="951.0" style="-fx-background-color: #ffffff;" text="Details" wrapText="true">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" minWidth="150.0" prefHeight="100.0" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Button minWidth="110.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" styleClass="buttonAdmin" text="Back">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

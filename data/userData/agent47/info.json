@@ -1,0 +1,13 @@
+{
+  "username" : "agent47",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider",
+  "email" : "agent47@hitman.com",
+  "firstName" : "Agent",
+  "lastName" : "Forty-Seven",
+  "phone" : "123456",
+  "infoPath" : "data/userData/agent47/info.json",
+  "certificatePath" : "data/userData/agent47/certificate.png",
+  "domain" : "Hitman",
+  "approved" : "approved"
+}
