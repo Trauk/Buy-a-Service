@@ -27,5 +27,15 @@ public class SPMenu
         SelfEditSP.InitScene();
     }
 
+    public void viewRequests() throws IOException
+    {
+        SpViewRequests.InitScene();
+    }
+
+    public void offerMenu() throws IOException
+    {
+        SpOfferMenu.InitScene();
+    }
+
 
 }

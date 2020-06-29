@@ -1,34 +1,34 @@
 package scenes.client;
 
 import Handler.SceneHandler;
-import JSON.JsonClient;
-import JSON.JsonRequest;
+import JSON.JsonOffer;
+import JSON.JsonSP;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import users.Client;
+import users.Sp;
 
 import java.io.IOException;
 
-public class ClientViewSingleRequest
+public class ClientViewSingleOffer
 {
     @FXML
     Label fxRequestTitle,fxRequestDetails,fxRequestDomain,fxName,fxPhone,fxEmail,fxUsername;
-    private static JsonRequest jr;
+    private static JsonOffer jr;
 
     public static void InitScene() throws IOException
     {
-        SceneHandler.InitScene("ClientViewSingleRequest","View request");
+        SceneHandler.InitScene("ClientViewSingleOffer","View offer");
     }
 
     public void initialize()
     {
 
-        fxRequestTitle.setText(jr.getReqeustTitle());
-        fxRequestDetails.setText(jr.getRequestDetails());
-        fxRequestDomain.setText(jr.getRequestDomain());
+        fxRequestTitle.setText(jr.getTitle());
+        fxRequestDetails.setText(jr.getDetails());
+        fxRequestDomain.setText(jr.getDomain());
 
 
-        JsonClient jc = Client.readClient("data/userData/" + jr.getRequestSender() + "/info.json");
+        JsonSP jc = Sp.readSP("data/userData/" + jr.getSender() + "/info.json");
         fxUsername.setText(jc.getUsername());
         fxName.setText(jc.getFirstName() + " " + jc.getLastName() + ", ");
         fxPhone.setText(jc.getPhone());
@@ -38,10 +38,10 @@ public class ClientViewSingleRequest
 
     public void backButtonAction() throws IOException
     {
-        ClientViewRequest.InitScene();
+        ClientViewOffers.InitScene();
     }
 
-    public static void setJr(JsonRequest obj)
+    public static void setJr(JsonOffer obj)
     {
         jr = obj;
     }

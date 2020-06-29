@@ -18,6 +18,12 @@ public class Request
         return ret;
     }
 
+    public static List<JsonRequest> getByDomain(String domain)
+    {
+        List<JsonRequest> ret = (listRequest).stream().filter(p -> ((p.getRequestDomain()).equals(domain))).collect(Collectors.toList());
+        return ret;
+    }
+
     public static ArrayList<String> getStrListSender()
     {
         ArrayList<String> ret = new ArrayList<String>();

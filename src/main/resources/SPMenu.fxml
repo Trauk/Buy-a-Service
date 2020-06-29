@@ -23,7 +23,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="1">
+            <VBox alignment="CENTER" onMouseClicked="#offerMenu" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="1">
                <children>
                   <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Offers" textFill="WHITE">
                      <font>
@@ -38,7 +38,7 @@
                   </ImageView>
                </children>
             </VBox>
-            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="container">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#viewRequests" prefHeight="200.0" prefWidth="100.0" styleClass="container">
                <children>
                   <Label alignment="CENTER" prefHeight="63.0" prefWidth="300.0" text="Requests" textFill="WHITE">
                      <font>
