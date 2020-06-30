@@ -1,0 +1,10 @@
+{
+  "username" : "LastTest",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client",
+  "email" : "test@gmail.com",
+  "firstName" : "12345",
+  "lastName" : "12345",
+  "phone" : "12335",
+  "infoPath" : "data/userData/LastTest/info.json"
+}

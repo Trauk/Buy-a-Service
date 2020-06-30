@@ -26,7 +26,7 @@ public class SpViewSingleOffer
         fxRequestTitle.setText(jr.getTitle());
         fxRequestDetails.setText(jr.getDetails());
         fxRequestDomain.setText(jr.getDomain());
-
+        
 
         JsonSP jc = Sp.readSP("data/userData/" + jr.getSender() + "/info.json");
         fxUsername.setText(jc.getUsername());
