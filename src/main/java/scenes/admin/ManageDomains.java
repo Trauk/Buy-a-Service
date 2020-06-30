@@ -68,9 +68,12 @@ public class ManageDomains
     public void deleteDomainButtonAction()
     {
         String ret = domainView.getSelectionModel().getSelectedItem();
-        Domain.deleteElement(ret);
-        //domainView.getItems().remove(ret);
-        domainViewOnLoad();
+        if(ret != null)
+        {
+            Domain.deleteElement(ret);
+            //domainView.getItems().remove(ret);
+            domainViewOnLoad();
+        }
     }
 
 

@@ -102,4 +102,12 @@
   "username" : "agent47",
   "password" : "81dc9bdb52d04dc20036dbd8313ed055",
   "type" : "ServiceProvider"
+}, {
+  "username" : "Admin2",
+  "password" : "21eed4f2e9ab214fdbf00a2a091d63c4",
+  "type" : "Admin"
+}, {
+  "username" : "LastTest",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client"
 } ]
