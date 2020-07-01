@@ -1,0 +1,113 @@
+[ {
+  "username" : "Admin",
+  "password" : "e3afed0047b08059d0fada10f400c1e5",
+  "type" : "Admin"
+}, {
+  "username" : "Bjorn",
+  "password" : "1fe7068f8d12c7abbbac9a07cf0d95df",
+  "type" : "Client"
+}, {
+  "username" : "14",
+  "password" : "76c538125fc5c9ec6ad1d05650a57de5",
+  "type" : "Client"
+}, {
+  "username" : "Dummy",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client"
+}, {
+  "username" : "Test",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Tamplar",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "AvocatulDa",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Test3",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Sp",
+  "password" : "202cb962ac59075b964b07152d234b70",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Client",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client"
+}, {
+  "username" : "SpTest",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "SpRejected",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "SpRejected2",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "122",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "SpTest1",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "SpTest2",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "SpTest3",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "SpTest4",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Admin1",
+  "password" : "2e33a9b0b06aa0a01ede70995674ee23",
+  "type" : "Admin"
+}, {
+  "username" : "ClientTest",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client"
+}, {
+  "username" : "SpAdded2",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Administrator",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Admin"
+}, {
+  "username" : "ClientAdaugat2",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client"
+}, {
+  "username" : "PrestatorServicii",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "AdminTest",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Admin"
+}, {
+  "username" : "agent47",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "ServiceProvider"
+}, {
+  "username" : "Admin2",
+  "password" : "21eed4f2e9ab214fdbf00a2a091d63c4",
+  "type" : "Admin"
+}, {
+  "username" : "LastTest",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client"
+} ]

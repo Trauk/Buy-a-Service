@@ -1,0 +1,8 @@
+JSON\JsonDomainTest.class
+JSON\JsonRequestTest.class
+users\UserTest.class
+JSON\JsonClientTest.class
+JSON\JsonPendingSPTest.class
+JSON\JsonUserTest.class
+JSON\JsonOfferTest.class
+JSON\JsonSPTest.class
