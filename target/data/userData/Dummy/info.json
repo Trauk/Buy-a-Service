@@ -1,0 +1,10 @@
+{
+  "username" : "Dummy",
+  "password" : "81dc9bdb52d04dc20036dbd8313ed055",
+  "type" : "Client",
+  "email" : "dummy@gmail.com",
+  "firstName" : "Dum",
+  "lastName" : "Dummster",
+  "phone" : "1234",
+  "infoPath" : "data/userData/Dummy/info.json"
+}
